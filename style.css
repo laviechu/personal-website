@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans+SC&display=swap');
+*{
+  margin:0;
+  padding:0;
+/*   border: solid 1px red; */
+  font-family: 'Noto Sans SC', sans-serif;
+}
+.top{
+  height:450px;
+  width:100%;
+  background-image:url(https://raw.githubusercontent.com/laviechu/image/main/EFF70F73-FDCE-4F22-B923-EBEC68BE4056.jpg);
+  
+  background-size: cover;
+  background-position:center;
+}
+section{
+  padding-top:80px;
+  background:rgba(211, 232, 214,0);
+  color:#7CB27C;
+}
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
